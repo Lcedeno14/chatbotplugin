@@ -1,6 +1,6 @@
 import React from 'react';
-import '../src/App.css';
-import ChatbotComponent from '../src/chatbot1'; // Import the chatbot component
+import './App.css';
+import ChatbotComponent from './chatbot1'; // Import the chatbot component
 
 function App() {
   return (

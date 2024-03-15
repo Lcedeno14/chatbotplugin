@@ -2,9 +2,9 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 import ChatbotComponent from './chatbot1';
-import config from '../../chatbotplugin/src/chatbotConfig';
-import MessageParser from '../../chatbotplugin/src/MessageParser';
-import ActionProvider from '../../chatbotplugin/src/ActionProvider';
+import config from './chatbotConfig';
+import MessageParser from './MessageParser';
+import ActionProvider from './ActionProvider';
 
 // Test for App component rendering properly
 
