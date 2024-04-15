@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import App from './App';
 import ChatbotComponent from './chatbot1';
 import config from './chatbotConfig';
 import MessageParser from './MessageParser';
