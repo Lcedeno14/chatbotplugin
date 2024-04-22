@@ -1,6 +1,6 @@
 import {createChatBotMessage, createCustomMessage} from "react-chatbot-kit";
 
-const name = 'Pool Pal Pro';
+const name = 'AquaAssist';
 const config = {
 
     initialMessages: [createChatBotMessage(
@@ -15,8 +15,20 @@ const config = {
             backgroundColor: '#376B7E',
         },
     },
+    customComponents: {
+        // Replaces the default header
+        header: () => <div style={{ backgroundColor: '#376B7E', padding: "5px", borderRadius: "3px" }}>This is the header</div>
+        // // Replaces the default bot avatar
+        // botAvatar: (props) => <MyAvatar {...props} />,
+        // // Replaces the default bot chat message container
+        // botChatMessage: (props) => <MyCustomChatMessage {...props} />,
+        // // Replaces the default user icon
+        // userAvatar: (props) => <MyCustomAvatar {...props} />,
+        // // Replaces the default user chat message
+        // userChatMessage: (props) => <MyCustomUserChatMessage {...props} />
+    },
         // more styles go here
 
 };
-createCustomMessage('Hello, how can I help you', 'sup');
+
 export default config;
