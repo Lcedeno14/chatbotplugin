@@ -2,6 +2,9 @@ import {createChatBotMessage, createCustomMessage} from "react-chatbot-kit";
 import MyAvatar from './assets/MyAvatar';
 
 const name = 'AquaAssist';
+
+
+
 const config = {
 
     initialMessages: [createChatBotMessage(
@@ -34,7 +37,13 @@ const config = {
         // // Replaces the default user chat message
         // userChatMessage: (props) => <MyCustomUserChatMessage {...props} />
     },
-        // more styles go here
+    /*widgets: [
+        {
+            widgetName: "options",
+            widgetFunc: (props) => <Options {...props} />,
+        },
+        // ...
+    ],*/
 
 };
 
