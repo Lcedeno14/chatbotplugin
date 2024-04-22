@@ -1,6 +1,11 @@
+import {createChatBotMessage, createCustomMessage} from "react-chatbot-kit";
+
 const name = 'Pool Pal Pro';
 const config = {
-    initialMessages: [{ type: "text", text: "Hello, how can I help you?", id: "1" }],
+
+    initialMessages: [createChatBotMessage(
+        'Feel free to ask your questions, and one of our pool experts will assist you shortly.\n'
+        )],
     botName:name,
     customStyles : {
         botMessageBox: {
@@ -13,5 +18,5 @@ const config = {
         // more styles go here
 
 };
-
+createCustomMessage('Hello, how can I help you', 'sup');
 export default config;
