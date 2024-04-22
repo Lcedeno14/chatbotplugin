@@ -4,9 +4,9 @@ import ChatbotComponent from './chatbot1'; // Import the chatbot component
 
 function App() {
   return (
-
-        <ChatbotComponent />
-
+    <div className="App">
+            <ChatbotComponent />
+    </div>
   );
 }
 

@@ -10,6 +10,7 @@ const ChatbotComponent = () => {
     return (
         <div className="chatbot-container">
             <Chatbot
+                headerTitle={"My new Chat titles"}
                 config={config}
                 messageParser={MessageParser}
                 actionProvider={ActionProvider}
