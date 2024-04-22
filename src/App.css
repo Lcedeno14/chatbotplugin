@@ -1,3 +1,10 @@
+html, body, .App{
+  width: 100%;
+  min-width: 100vw;
+  margin:0;
+  padding:0;
+  overflow-x: hidden;
+}
 .header-content {
   background-color: #282c34;
   width: 100%;
@@ -66,8 +73,9 @@ transform: translateY(-2px);
 .avatar-image {
   border-radius: 50%; /* This will make the image fully round */
   object-fit: cover; /* Ensures the image covers the area without being distorted */
-  width: 550px; /* Optional: adjust as needed */
-  height: 550px; /* Optional: adjust as needed */
+  width:100%;
+  max-width: 550px; /* Optional: adjust as needed */
+  height: auto; /* Optional: adjust as needed */
 }
 
 @keyframes App-logo-spin {
