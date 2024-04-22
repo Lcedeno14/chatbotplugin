@@ -10,7 +10,7 @@ function App() {
               <div className="company-name"> Aqua Assistant </div>
               <div className="right-content">
                   <button className="login-button font-color-gradient">Login</button>
-                  <i className="fas fa-bars menu-icon"></i>
+                  <i className="fas fa-bars menu-icon font-color-gradient"></i>
               </div>
           </div>
           <div className="App-body">
