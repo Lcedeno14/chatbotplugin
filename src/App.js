@@ -9,7 +9,7 @@ function App() {
           <div className="header-content">
               <div className="company-name"> Aqua Assistant </div>
               <div className="right-content">
-                  <span className="font-color-gradient login-text">Login</span>
+                  <button className="login-button font-color-gradient">Login</button>
                   <i className="fas fa-bars menu-icon"></i>
               </div>
           </div>
@@ -22,7 +22,7 @@ function App() {
                           Aqua Assist, the AI-powered chatbot designed specifically for pool professionals.</p>
                   </div>
               </div>
-              <img src={avatar} alt="Aqua" width="550" height="550"/>
+              <img src={avatar} alt="Aqua" className="avatar-image" width="550" height="550"/>
 
           </div>
       </header>

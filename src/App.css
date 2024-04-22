@@ -1,12 +1,35 @@
 .header-content {
+
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
 }
+.login-button {
+  background: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 20px;
+  outline: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.login-button:hover, .login-button:focus {
+  background: linear-gradient(45deg, #2575fc 0%, #6a11cb 100%);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+transform: translateY(-2px);
+}
+
 
 .App {
+  background-blend-mode: soft-light;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +63,12 @@
 .App-link {
   color: #61dafb;
 }
+.avatar-image {
+  border-radius: 50%; /* This will make the image fully round */
+  object-fit: cover; /* Ensures the image covers the area without being distorted */
+  width: 550px; /* Optional: adjust as needed */
+  height: 550px; /* Optional: adjust as needed */
+}
 
 @keyframes App-logo-spin {
   from {
@@ -65,6 +94,7 @@
 .menu-icon {
   font-size: 1.5em;
   cursor: pointer;
+  padding-left: 10px;
   padding-right: 10px; /* Padding to prevent touching the window edge */
 }
 
@@ -111,7 +141,10 @@
   .App-body {
     flex-direction: column; /* Stack elements vertically on mobile */
   }
-
+  .avatar-image {
+    width: 300px;  /* Smaller width for mobile */
+    height: 300px; /* Smaller height for mobile */
+  }
   .product-description, .info-section {
     align-items: center;
     text-align: center;
@@ -128,12 +161,23 @@
     margin-right: 10px; /* Remove margin for mobile layout */
     margin-top: 0px; /* Add some spacing */
   }
+  .login-button {
+    padding: 8px 16px;
+  font-size: 0.9em;
+  border-radius: 15px;
+  }
 
   .menu-icon {
-    padding-right: 0; /* Adjust padding for smaller screens */
+    padding-left: 10px;
   }
 
   .company-name {
     margin-bottom: 10px; /* Add space below the company name on mobile */
+  }
+}
+@media (max-width: 480px) {
+  .avatar-image {
+    width: 200px;  /* Even smaller width for small mobile screens */
+    height: 200px; /* Even smaller height for small mobile screens */
   }
 }
