@@ -33,7 +33,7 @@ class ActionProvider {
         }));
     }
     green(){
-        const greenMessage = this.createChatBotMessage("Please answer some questions that can help us diagnose the issue:\n" +
+        const greenMessage = this.createChatBotMessage("Please answer some questions that can help us diagnose the issue for a green pool:\n" +
             "\n" +
             "When were the chemicals last added to the pool? Knowing when and what chemicals were last added can help determine " +
             "if the current state is due to chemical depletion or imbalance.\n" +
